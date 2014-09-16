@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>株式会社ReBock</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="keywords" content="ReBock,株式会社ReBock,Re:Bock" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <link href="style.css" rel="stylesheet" type="text/css">
+        <!-- jQuery.jsの読み込み -->
+        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js"></script>
+   <!--[if lt IE 9]>
+   <script type="text/javascript" src="respond.js"></script>
+   <script type="text/javascript" src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+<script type="text/javascript" src="html5shiv.js"></script>
+<script type="text/javascript" src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
+<![endif]-->
+        <!-- スムーズスクロール部分の記述 -->
+        <script>
+            $(function() {
+                // #で始まるアンカーをクリックした場合に処理
+                $('a[href^=#]').click(function() {
+                    // スクロールの速度
+                    var speed = 400; // ミリ秒
+                    // アンカーの値取得
+                    var href = $(this).attr("href");
+                    // 移動先を取得
+                    var target = $(href == "#" || href == "" ? 'html' : href);
+                    // 移動先を数値で取得
+                    var position = target.offset().top;
+                    // スムーススクロール
+                    $('body,html').animate({scrollTop: position}, speed, 'swing');
+                    return false;
+                });
+            });
+        </script>
+    </head>
+    <body>
+        <div id="inner" onclick>
+            <div id="fixedBox">
+                <h1 id="logo"><a href="#top"><img src="img/logo.png" alt="株式会社ReBock" /></a></h1>
+                <h1 id="logo_sp"><a href="#top"><img src="img/logo_sp.png" alt="株式会社ReBock" /></a></h1>
+                <nav id="menu">
+                    <ul>
+                        <li id="first"><a href="#service">SERVICE</a></li>
+                        <li><a href="#company">COMPANY</a></li>
+                        <li><a href="#access">ACCESS</a></li>
+                        <li id="last"><a href="#contact">CONTACT</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div id="content">
+                <section id="service"><h2 class="title"><span>SERVICE</span></h2>
+                    <div class="main">
+                        <p class="detail">弊社の技術と提案で、お客様の発展をサポート<!-- ??アシスト、支援、援助、手助け?? !-->します。</p>
+                        <div id="figure"><img src="img/phone.png" alt="スマートフォンアプリ開発"/><span class="develop">スマートフォンアプリ開発</span><br/>
+                        <img src="img/web.png" alt="Webシステム開発"/><span class="develop"><span class="number">Ｗｅｂ</span>システム開発</span><br/>
+                        <img src="img/hp.png" alt="ホームページ制作"/><span class="develop">ホームページ制作</span>
+                        </div>
+                    </div>
+                </section>
+
+                <section id="company"><h2 class="title"><span>COMPANY</span></h2>
+                    <div class="main">
+                        <table>
+                            <tr><th>商号</th><td>：</td><td>株式会社ReBock(レボック)</td></tr>
+                            <tr><th>所在地</th><td>：</td><td><span class="number">名古屋市中区錦3-11-25</span><br/><span class="number">アーク栄錦ニュービジネスビル520</span></td></tr>
+                            <tr><th>連絡先</th><td>：</td><td><span class="number">TEL）052-265-8491<br/>FAX）052-265-8492</span></td></tr>
+                            <tr><th>代表取締役</th><td>：</td><td>岬　伸哉</td></tr>
+                            <tr><th>設立</th><td>：</td><td><span class="number">2014年6月10日</span></td></tr>
+                            <tr><th>資本金</th><td>：</td><td><span class="number">200万円</span></td></tr>
+                            <tr><th>事業内容</th><td>：</td><td>コンピュータを駆使したシステムの企画、デザイン、提案、開発、研究、構築、管理、請負、保守、運営、販売</td></tr>
+                        </table>
+                    </div>
+                </section>
+
+                <section id="access"><h2 class="title"><span>ACCESS</span></h2>
+                    <div class="main">
+                        <p>地下鉄名城線、東山線　栄駅から徒歩<span class="number">7</span>分<br/>地下鉄東山線　伏見駅から徒歩<span class="number">7</span>分</p>
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3261.437292637777!2d136.9025542!3d35.17065194999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6003772acbe48375%3A0x60534a324a92006c!2z44CSNDYwLTAwMDMg5oSb55-l55yM5ZCN5Y-k5bGL5biC5Lit5Yy66Yym77yT5LiB55uu77yR77yR4oiS77yS77yVIOOCouODvOOCr-aghOmMpuODi-ODpeODvOODk-OCuOODjeOCueODk-ODqw!5e0!3m2!1sja!2sjp!4v1409901186246" frameborder="0" style="border:0"></iframe>
+                    </div>
+                </section>
+
+                <section id="contact"><h2 class="title"><span>CONTACT</span></h2>
+                    <div class="main">
+                        <p>弊社へのお問い合わせはこちらのフォームにご入力の上、送信してください。</p>
+                        <form action="" method="">
+                            <table>
+                                <tr><th>お名前</th><td><input type="text" name="name" /></td></tr>
+                                <tr><th>フリガナ</th><td><input type="text" name="name_kana" /></td></tr>
+                                <tr><th>電話番号</th><td><input type="tel" name="number" /></td></tr>
+                                <tr><th>メールアドレス</th><td><input type="email" name="address" /></td></tr>
+                                <tr><th>お問い合わせ内容</th><td><textarea name="comments"></textarea></td></tr>
+                            </table>
+                            <dl>
+                                <dt>お名前</dt><dd><input type="text" name="name" /></dd>
+                                <dt>フリガナ</dt><dd><input type="text" name="name_kana" /></dd>
+                                <dt>電話番号</dt><dd><input type="tel" name="number" /></dd>
+                                <dt>メールアドレス</dt><dd><input type="email" name="address" /></dd>
+                                <dt>お問い合わせ内容</dt><dd><textarea name="comments"></textarea></dd>
+                            </dl>
+                            <div id="button"><input type="submit" value="確認"></div>
+                        </form>
+                    </div>
+                
+                    <div class="main" id="confirm">
+                        <p>弊社へのお問い合わせはこちらのフォームにご入力の上、送信してください。</p>
+                        <ul>
+                            <li>お名前を入力してください</li>
+                            <li>フリガナを入力してください</li>
+                            <li>電話番号を入力してください</li>
+                            <li>メールアドレスを入力してください</li>
+                            <li>お問い合わせ内容を入力してください</li>
+                        </ul>
+                        <form action="" method="">
+                            <table>
+                                <tr><th>お名前</th><td><input type="text" name="name" /></td></tr>
+                                <tr><th>フリガナ</th><td><input type="text" name="name_kana" /></td></tr>
+                                <tr><th>電話番号</th><td><input type="tel" name="number" /></td></tr>
+                                <tr><th>メールアドレス</th><td><input type="email" name="address" /></td></tr>
+                                <tr><th>お問い合わせ内容</th><td><textarea name="comments"></textarea></td></tr>
+                            </table>
+                            <dl>
+                                <dt>お名前</dt><dd><input type="text" name="name" /></dd>
+                                <dt>フリガナ</dt><dd><input type="text" name="name_kana" /></dd>
+                                <dt>電話番号</dt><dd><input type="tel" name="number" /></dd>
+                                <dt>メールアドレス</dt><dd><input type="email" name="address" /></dd>
+                                <dt>お問い合わせ内容</dt><dd><textarea name="comments"></textarea></dd>
+                            </dl>
+                            <img src="img/image.png" />
+                            <p class="attest">認証文字を入力してください</p>
+                            <input type="text" id="attestation" />
+                            <p class="attention">以上の内容に間違いがなければ、送信ボタンをクリックしてください。</p>
+                            <div id="button"><input type="submit" value="送信"></div>
+                        </form>     
+                    </div>
+                    
+                    <div class="main" id="complete">
+                        <p class="message">お問い合わせありがとうございました。</p>
+                        <p>内容を確認次第、追ってご連絡させていただきます。<br/>
+                        お問い合わせの内容によっては回答までお時間をいただく場合がございます。<br/>
+                        あらかじめご了承ください。<br/><br/>
+                        なお、一週間たってもお返事が届かない場合は、恐れ入りますが再度お問い合わせください。</p>
+                    </div>
+                </section>
+                <hr>
+            </div>
+            <div id="copyright"><p>&copy;<span class="number">2014</span> ReBock All Rights Reserved.</p></div>
+        </div>                   
+    </body>
+</html>

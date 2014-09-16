@@ -1,0 +1,420 @@
+@charset "utf-8";
+@import url(http://fonts.googleapis.com/css?family=Vollkorn:400italic,700italic,400,700);
+
+
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+
+/*　　リセット　　*/
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+
+/* 全ての要素に対する余白初期値設定 */
+body,
+h1,h2,h3,h4,h5,h6,
+p,ul,ol,dl,dt,dd,li,
+table,th,td,
+form,select,option,input
+address,pre,strong,em,iframe,img{
+    margin:0;
+    padding:0;
+    font-size:100%;
+    border:0;
+    font-weight: 400;
+}
+
+
+/* デフォルト設定 */
+
+body{
+    color: #2E1200;
+    background-image: url("img/sky_L2.jpg"); /* 全体の背景画像 */
+    background-repeat: no-repeat;            /* 背景を繰り返さない */
+    background-position: 50% 50%; /* 背景画像の位置は画面中央 */
+    background-size: cover;
+    background-attachment:fixed;             /* 背景画像を固定する */
+    font-family:'Vollkorn',"ヒラギノ明朝 ProN W6","HiraMinProN-W6","HG明朝E","ＭＳ Ｐ明朝","MS PMincho","MS 明朝",serif;
+    overflow: auto;
+    font-size: 14px;
+}
+
+#inner {
+    background: #fff;
+    width: 840px;
+    padding:0 4% 1px 5%;
+    margin: 0 auto 0;
+}
+.number {
+    font-family: "ヒラギノ明朝 ProN W6","HiraMinProN-W6","HG明朝E","ＭＳ Ｐ明朝","MS PMincho","MS 明朝",serif;
+    //font-weight: 400;
+}
+
+@media screen and (max-width: 1200px) {
+    #inner {
+        width: 80%;
+        margin: 0 auto 0;
+        padding: 0 5% 1px;
+    }
+}
+
+
+/* リストマーカーを非表示 */
+ul,ol{
+    list-style-type:none;
+}
+
+/* テーブルセルのボーダーの設定 */ 
+table {
+    border-collapse: collapse; 
+    border-spacing: 0;
+}
+
+a {
+    color: #fff;
+    text-decoration: none;
+}
+
+h2 {
+    color: #8e979a;
+    font-weight: 400;
+    font-size: 26px;
+    border-bottom: solid 1px rgb(132,122,113);
+    border-left: solid 1px rgb(132,122,113);
+}
+
+h2 span {
+    border-left: solid 10px rgb(132,122,113);
+    margin: 5px;
+    padding-left: 5px;
+    margin-left: 5px;
+}
+
+#logo {
+    margin: 50px 20px 0 -10px;
+
+}
+
+#logo_sp{
+    display: none;
+}
+
+@media screen and (max-width: 950px) {
+    #logo {
+        display: none;
+    }
+    #logo_sp {
+        display: block;
+        padding-top: 30px;
+        text-align: center;
+    }
+
+}
+
+/*	clearfix
+------------------------------*/
+.clearfix:after {/*for modern browser*/
+    content: "";
+    display: block;
+    clear: both;
+}
+
+* html .clearfix { zoom:1; } /*for IE6*/
+*:first-child+html .clearfix { zoom:1; } /*for IE7*/
+
+
+/*  メニュー  */
+
+#fixedBox {
+    position: fixed;
+}
+
+#menu ul {
+    font-size: 14px;
+    background: rgb(184,211,210);
+
+    border: none;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius:10px;
+    behavior:url(border-radius.htc);
+}
+
+li a {
+    font-weight: 400;
+    text-align: center;
+    display: block;
+    padding-top: 23px;
+    width: 123px;
+    height: 45px;
+    border: none;
+}
+
+li a:hover {
+    width: 121px;
+    height: 43px;
+    color: rgb(184,211,210);
+    background: #fff;
+
+    border:rgb(184,211,210) solid 1px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius:10px;
+    behavior:url(border-radius.htc);
+}
+
+/*   コンテンツ　　*/
+
+#menu {
+    margin-top: 30px;
+    display: block;
+    float: left;
+}
+#content {
+    padding: 30px;
+    margin-top: 80px;
+    width: 78%;
+    float: right;
+}
+section {
+    width: 100%;
+    margin-bottom: 40px;
+}
+
+.main {
+    border-right: solid 1px rgb(132,122,113);
+    padding: 20px;
+}
+
+
+@media screen and (max-width: 950px) {
+    #fixedBox {
+        position: static;
+    }
+
+    #menu {
+        display: none;
+        float: none;
+    }
+
+    #content {
+        margin-top: 40px;
+        float: none;
+        width: 100%;
+        padding: 0;
+    }
+}
+
+/*   サービス　　*/
+#service img {
+    vertical-align: middle;
+    margin: 20px 0;
+    width:300px;
+    height:300px;
+}
+
+#service p{
+    font-size: 24px;
+}
+
+#service span.develop {
+    display: inline-block;
+    width: 270px;
+    font-family:'Vollkorn',"ヒラギノ明朝 ProN W6","HiraMinProN-W6","HG明朝E","ＭＳ Ｐ明朝","MS PMincho","MS 明朝",serif;
+    font-size: 19px;
+    margin-left: 30px;
+}
+
+@media screen and (max-width: 950px) {
+    #service img {
+        width: 260px;
+        height: auto;
+    }
+
+    #service p{
+        font-size: 20px;
+    }
+    #service #figure{
+        text-align: center;
+    }
+    
+    #service span.develop {
+        margin: 0 auto 30px;
+        font-size: 16px;
+        text-align: center;
+    }
+}
+
+/*   カンパニー　　*/
+#company th{
+    display: block;
+    text-align: left;
+    vertical-align: top;
+    width: 120px;
+    //font-weight: 400;
+}
+
+#company td {
+    font-weight: 400;
+    vertical-align: top;
+    line-height: 1.5em;
+    padding-bottom: 20px;
+}
+
+@media screen and (max-width: 479px) {
+    #company th{
+        width: 90px;
+    }   
+}
+
+/*    アクセス　　　*/
+#access p {
+    line-height: 1.5em;
+}
+
+#access iframe {
+    width:90%;
+    height:350px;
+    margin: 20px 0 20px;
+}
+
+@media screen and (max-width: 479px) {
+    #access iframe {
+        height: 200px;
+    }
+}
+
+/*  コンタクト  */
+
+#contact dl {
+    display: none;
+}
+
+#contact table {
+    margin: 30px 0;
+}
+
+#contact th {
+    width: 150px;
+    text-align: left;
+    display: block;
+    margin: 5px 0 25px;
+}
+
+#contact td {
+    vertical-align: top;
+}
+
+#contact input[type="text"],#contact input[type="tel"],#contact input[type="email"] {
+    width: 300px;
+    height: 18px;
+}
+#contact textarea {
+    width: 300px;
+    height: 180px;
+}
+
+
+#contact input[type="submit"] {
+    font-family:"ヒラギノ明朝 ProN W6","HiraMinProN-W6","HG明朝E","ＭＳ Ｐ明朝","MS PMincho","MS 明朝",serif;
+    padding: 7px 25px 10px;
+    font-size: 16px;
+    background-color: rgb(184,211,210);
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius:10px;
+    behavior:url(border-radius.htc);
+    cursor: pointer;
+}
+
+#contact #button {
+    text-align: center;
+}
+
+#contact #confirm ul {
+    margin-top: 20px;
+    color: red;
+}
+
+#contact #confirm input[type="text"],
+#contact #confirm input[type="tel"],
+#contact #confirm input[type="email"],
+#contact #confirm textarea {
+    border: 1px solid red;
+}
+#contact #complete .message {
+    font-size: 20px;
+    margin: 20px 0;
+}
+
+#contact #confirm .attest {
+    color: silver;
+}
+
+#contact #confirm input[type="text"]#attestation {
+    border: 1px solid silver;
+    width: 150px;
+}
+#contact #confirm .attention {
+    margin-top: 20px;
+}
+
+@media screen and (max-width: 615px) {
+    #contact dl {
+        display: block;
+        margin: 30px 0;
+    } 
+
+    #contact dt {
+        margin-top: 10px;
+    }
+
+
+    #contact input[type="text"],#contact input[type="tel"],#contact input[type="email"] {
+        width: 90%;
+        height: 18px;
+    }
+    #contact textarea {
+        width: 90%;
+        height: 180px;
+    }
+
+    #contact table {
+        display: none;
+    }
+}
+
+hr {
+    margin: 50px 30px 0;
+    color: #847a71;
+}
+
+#copyright {
+    clear:both;
+    text-align: center;
+    margin-left: 110px;
+    margin-bottom: 30px;
+}
+
+
+@media screen and (max-width: 950px) {
+    hr {
+        margin: 15px;
+    }
+
+    #copyright { 
+        margin-left: 10px;
+        margin-bottom: 15px;
+    }
+}
+/* 
+    Created on : 2014/09/04, 9:49:30
+    Author     : 美月
+*/
+
